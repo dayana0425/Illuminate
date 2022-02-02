@@ -36,9 +36,9 @@ export async function initContract() {
     nearConfig.contractName,
     {
       // View methods are read only. They don't modify the state, but usually return some value.
-      viewMethods: ["getMemos"],
+      viewMethods: ["getMemos", "getCreations", "getAllCreations", "getAllCreationVotes", "getAllVotedForCreations", "getEntries", "getAllVotedForEntries", "getAllEntryVotes",  "getIlluminatedWorks"],
       // Change methods can modify the state. But you don't receive the returned value when called.
-      changeMethods: ["addMemo", "transferNearTokens"],
+      changeMethods: ["addMemo", "transferNearTokens", "addCreation", "handleVote", "addEntryToCreation", "handleEntryVote", "publish"],
     }
   );
 }
@@ -54,5 +54,5 @@ export function login() {
   // user's behalf.
   // This works by creating a new access key for the user's account and storing
   // the private key in localStorage.
-  window.walletConnection.requestSignIn("");
+  window.walletConnection.requestSignIn(nearConfig.contractName);
 }

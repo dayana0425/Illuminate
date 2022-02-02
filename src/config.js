@@ -1,8 +1,7 @@
-const CONTRACT_NAME = process.env.CONTRACT_NAME ||'decentralized_venmo'
+const CONTRACT_NAME = process.env.CONTRACT_NAME ||'db.illuminate.testnet'
 
 function getConfig(env) {
   switch (env) {
-
   case 'production':
   case 'mainnet':
     return {
