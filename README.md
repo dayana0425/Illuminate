@@ -1,8 +1,8 @@
-decentralized_venmo
+Illuminate - Decentralized Publishing House 
 ==================
+Credit to DeCash for initial code: https://github.com/doriancrutcher/DeCash
 
 This [React] app was initialized with [create-near-app]
-
 
 Quick Start
 ===========
