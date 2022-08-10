@@ -1,4 +1,6 @@
 Illuminate - Decentralized Publishing House 
+
+Miro Design: https://miro.com/app/board/o9J_l5APcCY=/
 ==================
 Credit to DeCash for initial code: https://github.com/doriancrutcher/DeCash
 
